@@ -2,9 +2,7 @@ import {
   ArrowDownRight,
   ArrowUpRight,
   BookOpen,
-  Code2,
   GraduationCap,
-  BriefcaseBusiness,
   Mail,
   MapPin,
 } from 'lucide-react';
@@ -37,8 +35,7 @@ export default function Home() {
           <div className="location"><MapPin size={16} aria-hidden="true" />City, Country · University Name</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
             <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><Mail size={19} /></a>
-            <a href="https://github.com/Yiling-Ma" aria-label="Yiling Ma on GitHub"><Code2 size={19} /></a>
-            <a href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><BriefcaseBusiness size={19} /></a>
+            <a className="linkedin-link" href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><span aria-hidden="true">in</span></a>
             <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GraduationCap size={20} /></a>
           </div>
         </div>
