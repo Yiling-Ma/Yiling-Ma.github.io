@@ -61,7 +61,7 @@ export default function Home() {
           <p className="eyebrow">Prospective PhD Student · 2027</p>
           <h1>Yiling Ma</h1>
           <p className="role">Researcher working at the intersection of <strong>machine learning</strong> and <strong>human-centered computing</strong>.</p>
-          <div className="location"><MapPin size={16} aria-hidden="true" />City, Country · University Name</div>
+          <div className="location"><MapPin size={16} aria-hidden="true" />New Haven, US, Yale University</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
             <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><GmailMark /><span>yiling.ma [at] yale.edu</span></a>
             <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GoogleScholarMark /><span>Google Scholar</span></a>
