@@ -25,9 +25,27 @@ function GithubMark() {
 }
 
 const researchAreas = [
-  { number: '01', title: 'Human-centered AI', description: 'Designing intelligent systems that are useful, interpretable, and aligned with the people who rely on them.' },
-  { number: '02', title: 'Multimodal learning', description: 'Learning representations across language, vision, and structured data to reason about complex real-world signals.' },
-  { number: '03', title: 'Responsible systems', description: 'Studying evaluation, robustness, and the social consequences of deployed machine learning systems.' },
+  {
+    number: '01',
+    title: 'Trustworthy LLMs & Research Reasoning',
+    tags: 'post-training · process evaluation · faithfulness',
+    question: 'How can we make model outputs not only stronger, but reliably grounded in the right evidence, scope, and reasoning process?',
+    work: 'ActReview · RbtAct · IdeaAmbig · IdeaAnchor · Scope-Fidelity Verifier',
+  },
+  {
+    number: '02',
+    title: 'Multimodal Medical AI',
+    tags: 'medical VLMs · RAG · imaging · longitudinal health data',
+    question: 'How can AI systems integrate visual, textual, and temporal biomedical signals without losing clinically critical evidence?',
+    work: 'Adaptive RAG for CT report generation · medical VLM evidence dependency · structural MRI for AD/ADRD · wearable glucose forecasting',
+  },
+  {
+    number: '03',
+    title: 'Computational Biomedicine',
+    tags: 'single-cell learning · cancer detection · biological representation learning',
+    question: 'How can representation learning capture structure that is both clinically useful and biologically meaningful?',
+    work: 'single-cell aptamer liquid biopsy · gene regulatory networks and causal representation learning · maximum-entropy graph modeling',
+  },
 ];
 
 const publications = [
@@ -74,13 +92,22 @@ export default function Home() {
 
         <section className="content-section" id="research">
           <div className="section-heading"><span>01</span><h2>Research interests</h2><p>The questions that connect my work.</p></div>
+          <p className="research-statement">My research sits at the intersection of trustworthy language models, multimodal medical AI, and computational biomedicine. I am especially interested in building systems that reason over evidence, know when to retrieve or abstain, and remain reliable in high-stakes biomedical settings.</p>
           <div className="research-list">
             {researchAreas.map((area) => (
               <article className="research-item" key={area.number}>
-                <span>{area.number}</span><div><h3>{area.title}</h3><p>{area.description}</p></div><ArrowUpRight size={20} aria-hidden="true" />
+                <span>{area.number}</span>
+                <div>
+                  <h3>{area.title}</h3>
+                  <p className="research-tags">{area.tags}</p>
+                  <p><strong>Question:</strong> {area.question}</p>
+                  <p><strong>Selected work:</strong> {area.work}</p>
+                </div>
+                <ArrowUpRight size={20} aria-hidden="true" />
               </article>
             ))}
           </div>
+          <p className="research-goal"><span>Long-term goal:</span> Build AI systems that learn from evidence and interaction while remaining reliable in scientific and biomedical research.</p>
         </section>
 
         <section className="content-section" id="publications">
