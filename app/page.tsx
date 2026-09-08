@@ -36,6 +36,29 @@ function ResearchLensIcon() {
   );
 }
 
+function AboutIcon() {
+  return (
+    <svg className="about-icon" aria-hidden="true" viewBox="0 0 92 92">
+      <path className="about-icon-frame" d="M20 17.5c16.5-2.1 35.1-2 51.8 0 2.1 18.2 2 36.9-.1 55.1-16.2 2.1-35.5 2.1-51.7 0-2.1-17.9-2.1-37 .1-55.1Z" />
+      <path className="about-icon-face" d="M46 28.1c7.1 0 12.6 5.5 12.6 12.3 0 7.1-5.6 12.5-12.6 12.5s-12.5-5.4-12.5-12.5c0-6.9 5.5-12.3 12.5-12.3Z" />
+      <path className="about-icon-shoulders" d="M26.7 68.5c3.3-8.7 10.1-13.1 19.4-13.1 9.2 0 16.1 4.4 19.3 13.1" />
+      <path className="about-icon-spark" d="M73.5 28.5l1.5 4.4 4.4 1.5-4.4 1.5-1.5 4.4-1.6-4.4-4.3-1.5 4.3-1.5 1.6-4.4Z" />
+    </svg>
+  );
+}
+
+function PublicationsIcon() {
+  return (
+    <svg className="publications-icon" aria-hidden="true" viewBox="0 0 92 92">
+      <path className="publications-icon-page publications-icon-back" d="M31 14.5h34.5l9.8 10.1v47.8H31V14.5Z" />
+      <path className="publications-icon-page" d="M18.5 24.2h38.7l10 10.2v43.1H18.5V24.2Z" />
+      <path className="publications-icon-fold" d="M57.2 24.2v10.2h10" />
+      <path className="publications-icon-line" d="M29.8 44.7h25.5M29.8 55.3h25.5M29.8 65.8h17.9" />
+      <path className="publications-icon-spark" d="M70.7 12.5v6.3M67.6 15.6h6.2" />
+    </svg>
+  );
+}
+
 function TeachingIcon() {
   return (
     <svg className="teaching-icon" aria-hidden="true" viewBox="0 0 92 92">
@@ -155,6 +178,7 @@ export default function Home() {
 
       <div className="content-panel" id="top">
         <section className="intro-section" id="about">
+          <div className="section-heading about-heading"><AboutIcon /><h2>About me</h2></div>
           <div className="intro-copy">
             <p>I am a master’s student in the Department of Biostatistics at Yale University, where I work with <a href="https://scholar.google.com/citations?user=baI7IY0AAAAJ&hl=en">Prof. Arman Cohan</a> and <a href="https://scholar.google.com/citations?user=eAM84HQAAAAJ&hl=en">Dr. Manasi Patwardhan</a> on LLMs for research at the <a href="https://nlp.cs.yale.edu/">Yale NLP Lab</a>.</p>
             <p>I have also worked with <a href="https://vllab.ucmerced.edu//">VLLab @ UC Merced</a>, <a href="https://www.ai4biomedlab.org/research/">AI4Biomed Lab</a>, <a href="https://www.gersteinlab.org/">Gerstein Lab</a>, <a href="https://www.oist.jp/research/research-units/cse">OIST CSE</a>, the University of Florida, Saudi Aramco, New York University Shanghai, <a href="https://en.zhejianglab.com/collaboration/aiforvirology/scholarlibrary/202312/t20231208_3684.shtml">Zhejiang Lab</a>, and <a href="https://www.wisbot.ai/">Wisbot</a> (startup). I appreciate the opportunity to collaborate with distinguished professors and researchers from these institutions.</p>
@@ -185,7 +209,7 @@ export default function Home() {
         </section>
 
         <section className="content-section publications-section" id="publications">
-          <div className="section-heading publications-heading"><h2>Selected Publications</h2></div>
+          <div className="section-heading publications-heading"><PublicationsIcon /><h2>Selected Publications</h2></div>
           <div className="selected-publication-list">
             {publications.map((publication, publicationIndex) => (
               <article className="selected-publication" key={`${publication.title}-${publicationIndex}`}>
