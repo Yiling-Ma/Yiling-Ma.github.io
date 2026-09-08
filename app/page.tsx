@@ -65,11 +65,10 @@ export default function Home() {
 
       <div className="content-panel" id="top">
         <section className="intro-section" id="about">
-          <p className="section-kicker">Hello, I’m Yiling Ma.</p>
-          <h2>I ask how intelligent systems can <em>understand people</em>—and how people can understand them in return.</h2>
           <div className="intro-copy">
             <p>I am a master’s student in the Department of Biostatistics at Yale University, where I work with Prof. Arman Cohan and Dr. Manasi Patwardhan on LLMs for research at the <a href="https://nlp.cs.yale.edu/">Yale NLP Lab</a>.</p>
             <p>I have also worked with <a href="https://vllab.ucmerced.edu//">VLLab @ UC Merced</a>, <a href="https://www.ai4biomedlab.org/research/">AI4Biomed Lab</a>, <a href="https://www.gersteinlab.org/">Gerstein Lab</a>, <a href="https://www.oist.jp/research/research-units/cse">OIST CSE</a>, the University of Florida, Saudi Aramco, and New York University Shanghai. I appreciate the opportunity to collaborate with distinguished professors and researchers from these institutions.</p>
+            <p>I plan to pursue a PhD beginning in Fall 2027, with a research focus on building rigorous, useful, and human-centered AI systems for scientific discovery and biomedical research.</p>
           </div>
           <div className="status-line"><span className="status-dot" />Currently: finishing my thesis and preparing PhD applications.</div>
         </section>
