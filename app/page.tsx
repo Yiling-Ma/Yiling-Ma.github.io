@@ -106,9 +106,24 @@ const teachingItems = [
 ];
 
 const publications = [
-  { year: '2026', title: 'Your strongest research project or paper title', authors: 'Yiling Ma, Collaborator Name, Advisor Name', venue: 'Conference / Journal / Under Review', tags: ['Paper', 'Code'] },
-  { year: '2025', title: 'A second project that shows research depth and independence', authors: 'Yiling Ma, Collaborator Name', venue: 'Workshop / Preprint', tags: ['Project', 'PDF'] },
-  { year: '2024', title: 'An earlier study that shaped your current research direction', authors: 'Yiling Ma, Advisor Name', venue: 'Research experience / Thesis', tags: ['Summary'] },
+  {
+    title: 'Publication title to be updated',
+    authors: ['Yiling Ma', 'Collaborator Name', 'Advisor Name'],
+    venue: 'Conference / Journal / Under Review',
+    links: ['Paper', 'Code', 'Project Page'],
+  },
+  {
+    title: 'Publication title to be updated',
+    authors: ['Yiling Ma', 'Collaborator Name'],
+    venue: 'Workshop / Preprint',
+    links: ['Paper', 'Code'],
+  },
+  {
+    title: 'Publication title to be updated',
+    authors: ['Yiling Ma', 'Advisor Name'],
+    venue: 'Research experience / Thesis',
+    links: ['Paper'],
+  },
 ];
 
 export default function Home() {
@@ -133,7 +148,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About me</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
+          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
@@ -169,6 +184,29 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="content-section publications-section" id="publications">
+          <div className="section-heading publications-heading"><h2>Selected Publications</h2></div>
+          <div className="selected-publication-list">
+            {publications.map((publication, publicationIndex) => (
+              <article className="selected-publication" key={`${publication.title}-${publicationIndex}`}>
+                <h3>{publication.title}</h3>
+                <p className="publication-authors">
+                  {publication.authors.map((author, authorIndex) => (
+                    <span key={`${author}-${authorIndex}`}>
+                      {author === 'Yiling Ma' ? <strong>{author}</strong> : author}
+                      {authorIndex < publication.authors.length - 1 ? ', ' : ''}
+                    </span>
+                  ))}
+                </p>
+                <p className="publication-venue">{publication.venue}</p>
+                <p className="selected-publication-links">
+                  {publication.links.map((link) => <span key={link}>{link}</span>)}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="content-section teaching-section" id="teaching">
           <div className="section-heading teaching-heading"><TeachingIcon /><h2>Teaching</h2></div>
           <div className="teaching-layout">
@@ -180,18 +218,6 @@ export default function Home() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="content-section" id="publications">
-          <div className="section-heading"><span>03</span><h2>Selected work</h2><p>A small set of projects with clear research contributions.</p></div>
-          <div className="publication-list">
-            {publications.map((publication) => (
-              <article className="publication" key={publication.title}>
-                <div className="publication-year">{publication.year}</div>
-                <div><h3>{publication.title}</h3><p className="authors">{publication.authors}</p><p className="venue">{publication.venue}</p><div className="publication-links">{publication.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div>
-              </article>
-            ))}
           </div>
         </section>
 
