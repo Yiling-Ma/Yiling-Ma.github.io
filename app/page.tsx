@@ -265,7 +265,7 @@ export default function Home() {
         <section className="content-section fur-section" id="fur-family">
           <div className="section-heading fur-heading">
             <PawIcon />
-            <h2><a href="https://www.instagram.com/mmia.ooo/">Fur Family</a></h2>
+            <h2>Fur Family</h2>
           </div>
           <div className="fur-grid" aria-label="Yiling Ma's cats">
             {furFamily.map((cat) => (
