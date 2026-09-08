@@ -110,7 +110,6 @@ export default function Home() {
               </details>
             ))}
           </div>
-          <p className="research-goal"><span>Long-term goal:</span> Build AI systems that learn from evidence and interaction while remaining reliable in scientific and biomedical research.</p>
         </section>
 
         <section className="content-section" id="publications">
