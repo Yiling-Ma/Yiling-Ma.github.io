@@ -26,24 +26,24 @@ function GithubMark() {
 
 const researchAreas = [
   {
-    number: '01',
     title: 'Trustworthy LLMs & Research Reasoning',
-    tags: 'post-training · process evaluation · faithfulness',
+    tags: 'Post-training · Process Evaluation · Faithfulness',
     question: 'How can we make model outputs not only stronger, but reliably grounded in the right evidence, scope, and reasoning process?',
+    hint: 'show/hide work on grounding LLM outputs in evidence, scope, and faithful reasoning processes.',
     work: 'ActReview · RbtAct · IdeaAmbig · IdeaAnchor · Scope-Fidelity Verifier',
   },
   {
-    number: '02',
     title: 'Multimodal Medical AI',
-    tags: 'medical VLMs · RAG · imaging · longitudinal health data',
+    tags: 'Medical VLMs · RAG · Imaging · Longitudinal Health Data',
     question: 'How can AI systems integrate visual, textual, and temporal biomedical signals without losing clinically critical evidence?',
+    hint: 'show/hide work on integrating visual, textual, and longitudinal biomedical evidence.',
     work: 'Adaptive RAG for CT report generation · medical VLM evidence dependency · structural MRI for AD/ADRD · wearable glucose forecasting',
   },
   {
-    number: '03',
     title: 'Computational Biomedicine',
-    tags: 'single-cell learning · cancer detection · biological representation learning',
+    tags: 'Single-Cell Learning · Cancer Detection · Biological Representation Learning',
     question: 'How can representation learning capture structure that is both clinically useful and biologically meaningful?',
+    hint: 'show/hide work on clinically useful and biologically meaningful representation learning.',
     work: 'single-cell aptamer liquid biopsy · gene regulatory networks and causal representation learning · maximum-entropy graph modeling',
   },
 ];
@@ -91,20 +91,23 @@ export default function Home() {
         </section>
 
         <section className="content-section" id="research">
-          <div className="section-heading"><span>01</span><h2>Research interests</h2><p>The questions that connect my work.</p></div>
+          <div className="section-heading research-heading"><span>01</span><h2>Research interests</h2><p>The questions that connect my work.</p></div>
           <p className="research-statement">My research sits at the intersection of trustworthy language models, multimodal medical AI, and computational biomedicine. I am especially interested in building systems that reason over evidence, know when to retrieve or abstain, and remain reliable in high-stakes biomedical settings.</p>
           <div className="research-list">
             {researchAreas.map((area) => (
-              <article className="research-item" key={area.number}>
-                <span>{area.number}</span>
-                <div>
-                  <h3>{area.title}</h3>
-                  <p className="research-tags">{area.tags}</p>
-                  <p><strong>Question:</strong> {area.question}</p>
-                  <p><strong>Selected work:</strong> {area.work}</p>
-                </div>
-                <ArrowUpRight size={20} aria-hidden="true" />
-              </article>
+              <details className="research-item" key={area.title}>
+                <summary>
+                  <span className="research-summary-text">
+                    <span>
+                      <span className="research-title">{area.title}:</span>
+                      <span className="research-tags">{area.tags}</span>
+                    </span>
+                    <span className="research-toggle">→ {area.hint}</span>
+                  </span>
+                </summary>
+                <p className="research-question"><strong>Question:</strong> {area.question}</p>
+                <p><strong>Selected work:</strong> {area.work}</p>
+              </details>
             ))}
           </div>
           <p className="research-goal"><span>Long-term goal:</span> Build AI systems that learn from evidence and interaction while remaining reliable in scientific and biomedical research.</p>
