@@ -1,7 +1,4 @@
 import {
-  ArrowUpRight,
-  BookOpen,
-  GraduationCap,
   Mail,
   MapPin,
 } from 'lucide-react';
@@ -171,7 +168,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
+          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
@@ -245,15 +242,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="content-section" id="experience">
-          <div className="section-heading"><span>04</span><h2>Experience</h2><p>Education and research appointments.</p></div>
-          <div className="timeline">
-            <article><span>2024 — Present</span><BookOpen size={20} aria-hidden="true" /><div><h3>Research Assistant · Lab Name</h3><p>University Name</p><p>One sentence on the question, method, and outcome of your current work.</p></div></article>
-            <article><span>2022 — 2024</span><GraduationCap size={20} aria-hidden="true" /><div><h3>Degree in Your Field</h3><p>University Name</p><p>Thesis: “Your thesis title.” Advisor: Professor Name.</p></div></article>
-          </div>
-        </section>
-
-        <footer><p>Let’s talk about research.</p><a href="mailto:yiling.ma@yale.edu">yiling.ma@yale.edu <ArrowUpRight size={18} /></a><span>© 2026 Yiling Ma</span></footer>
+        <footer><span>Last updated: Sep 2026 · © Yiling Ma</span></footer>
       </div>
     </main>
   );
