@@ -142,7 +142,7 @@ const publications = [
   {
     title: 'Low-light image and video enhancement: A comprehensive survey and beyond',
     authors: ['Shen Zheng', 'Yiling Ma', 'Jinqian Pan', 'Changjie Lu', 'Gaurav Gupta'],
-    venue: 'arXiv preprint arXiv:2212.10772',
+    venue: '',
     links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2212.10772' }],
   },
   {
@@ -239,7 +239,7 @@ export default function Home() {
                     </span>
                   ))}
                 </p>
-                <p className="publication-venue">{publication.venue}</p>
+                {publication.venue ? <p className="publication-venue">{publication.venue}</p> : null}
                 <p className="selected-publication-links">
                   {publication.links.map((link) => (
                     link.href
