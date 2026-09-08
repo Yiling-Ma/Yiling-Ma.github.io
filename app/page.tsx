@@ -16,29 +16,30 @@ const researchAreas = [
 ];
 
 const publications = [
-  { year: '2026', title: 'Your strongest research project or paper title', authors: 'Your Name, Collaborator Name, Advisor Name', venue: 'Conference / Journal / Under Review', tags: ['Paper', 'Code'] },
-  { year: '2025', title: 'A second project that shows research depth and independence', authors: 'Your Name, Collaborator Name', venue: 'Workshop / Preprint', tags: ['Project', 'PDF'] },
-  { year: '2024', title: 'An earlier study that shaped your current research direction', authors: 'Your Name, Advisor Name', venue: 'Research experience / Thesis', tags: ['Summary'] },
+  { year: '2026', title: 'Your strongest research project or paper title', authors: 'Yiling Ma, Collaborator Name, Advisor Name', venue: 'Conference / Journal / Under Review', tags: ['Paper', 'Code'] },
+  { year: '2025', title: 'A second project that shows research depth and independence', authors: 'Yiling Ma, Collaborator Name', venue: 'Workshop / Preprint', tags: ['Project', 'PDF'] },
+  { year: '2024', title: 'An earlier study that shaped your current research direction', authors: 'Yiling Ma, Advisor Name', venue: 'Research experience / Thesis', tags: ['Summary'] },
 ];
 
 export default function Home() {
   return (
     <main className="site-shell">
       <aside className="profile-panel">
-        <a className="wordmark" href="#top" aria-label="Back to top">YN<span>.</span></a>
+        <a className="wordmark" href="#top" aria-label="Back to top">YM<span>.</span></a>
         <div className="profile-content">
-          <div className="portrait" role="img" aria-label="Profile photo placeholder">
-            <span>YN</span><div className="portrait-orbit" />
+          <div className="portrait">
+            <img src="/yiling-photo.jpeg" alt="Portrait of Yiling Ma" />
+            <div className="portrait-orbit" />
           </div>
           <p className="eyebrow">Prospective PhD Student · 2027</p>
-          <h1>Your Name</h1>
+          <h1>Yiling Ma</h1>
           <p className="role">Researcher working at the intersection of <strong>machine learning</strong> and <strong>human-centered computing</strong>.</p>
           <div className="location"><MapPin size={16} aria-hidden="true" />City, Country · University Name</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
-            <a href="mailto:you@example.edu" aria-label="Email"><Mail size={19} /></a>
-            <a href="https://github.com/" aria-label="GitHub"><Code2 size={19} /></a>
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><BriefcaseBusiness size={19} /></a>
-            <a href="https://scholar.google.com/" aria-label="Google Scholar"><GraduationCap size={20} /></a>
+            <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><Mail size={19} /></a>
+            <a href="https://github.com/Yiling-Ma" aria-label="Yiling Ma on GitHub"><Code2 size={19} /></a>
+            <a href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><BriefcaseBusiness size={19} /></a>
+            <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GraduationCap size={20} /></a>
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
@@ -53,7 +54,7 @@ export default function Home() {
           <a href="#publications">Selected work <ArrowDownRight size={17} /></a>
         </header>
         <section className="intro-section" id="about">
-          <p className="section-kicker">Hello, I’m Your Name.</p>
+          <p className="section-kicker">Hello, I’m Yiling Ma.</p>
           <h2>I ask how intelligent systems can <em>understand people</em>—and how people can understand them in return.</h2>
           <div className="intro-copy">
             <p>I am currently a [degree] student at [University], advised by [Advisor]. My research focuses on [your core research question], with an emphasis on building systems that are rigorous, transparent, and grounded in real needs.</p>
@@ -93,7 +94,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer><p>Let’s talk about research.</p><a href="mailto:you@example.edu">you@example.edu <ArrowUpRight size={18} /></a><span>© 2026 Your Name</span></footer>
+        <footer><p>Let’s talk about research.</p><a href="mailto:yiling.ma@yale.edu">yiling.ma@yale.edu <ArrowUpRight size={18} /></a><span>© 2026 Yiling Ma</span></footer>
       </div>
     </main>
   );
