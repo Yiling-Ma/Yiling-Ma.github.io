@@ -151,18 +151,6 @@ const publications = [
     venue: '',
     links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2212.10772' }],
   },
-  {
-    title: 'Publication title to be updated',
-    authors: ['Yiling Ma', 'Collaborator Name'],
-    venue: 'Workshop / Preprint',
-    links: [{ label: 'Paper' }, { label: 'Code' }],
-  },
-  {
-    title: 'Publication title to be updated',
-    authors: ['Yiling Ma', 'Advisor Name'],
-    venue: 'Research experience / Thesis',
-    links: [{ label: 'Paper' }],
-  },
 ];
 
 const furFamily = [
