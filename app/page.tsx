@@ -1,5 +1,4 @@
 import {
-  ArrowDownRight,
   ArrowUpRight,
   BookOpen,
   GraduationCap,
@@ -65,10 +64,6 @@ export default function Home() {
       </aside>
 
       <div className="content-panel" id="top">
-        <header className="topbar">
-          <span>Research portfolio</span>
-          <a href="#publications">Selected work <ArrowDownRight size={17} /></a>
-        </header>
         <section className="intro-section" id="about">
           <p className="section-kicker">Hello, I’m Yiling Ma.</p>
           <h2>I ask how intelligent systems can <em>understand people</em>—and how people can understand them in return.</h2>
