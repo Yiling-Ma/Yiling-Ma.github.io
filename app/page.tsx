@@ -3,20 +3,9 @@ import {
   ArrowUpRight,
   BookOpen,
   GraduationCap,
+  Mail,
   MapPin,
 } from 'lucide-react';
-
-function GmailMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
-      <path fill="#4285F4" d="M1.64 19.5h3.82v-9.28L0 6.13v11.73c0 .91.73 1.64 1.64 1.64Z" />
-      <path fill="#34A853" d="M18.55 19.5h3.81c.91 0 1.64-.73 1.64-1.64V6.13l-5.45 4.09v9.28Z" />
-      <path fill="#FBBC04" d="M18.55 6.13v4.09L24 6.13V4.91c0-1.81-2.07-2.84-3.52-1.75l-1.93 1.48v1.49Z" />
-      <path fill="#EA4335" d="M5.46 10.22V4.64L12 9.55l6.55-4.91v5.58L12 15.13l-6.54-4.91Z" />
-      <path fill="#C5221F" d="M0 4.91v1.22l5.46 4.09V4.64L3.52 3.16C2.07 2.07 0 3.1 0 4.91Z" />
-    </svg>
-  );
-}
 
 function GoogleScholarMark() {
   return (
@@ -63,7 +52,7 @@ export default function Home() {
           <p className="role">Researcher working at the intersection of <strong>machine learning</strong> and <strong>human-centered computing</strong>.</p>
           <div className="location"><MapPin size={16} aria-hidden="true" />New Haven, US, Yale University</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
-            <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><GmailMark /><span>yiling.ma [at] yale.edu</span></a>
+            <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><Mail size={21} aria-hidden="true" /><span>yiling.ma [at] yale.edu</span></a>
             <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GoogleScholarMark /><span>Google Scholar</span></a>
             <a href="https://github.com/" aria-label="Yiling Ma on GitHub"><GithubMark /><span>GitHub</span></a>
             <a href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><span className="linkedin-mark" aria-hidden="true">in</span><span>LinkedIn</span></a>
