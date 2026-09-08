@@ -3,9 +3,30 @@ import {
   ArrowUpRight,
   BookOpen,
   GraduationCap,
-  Mail,
   MapPin,
 } from 'lucide-react';
+
+function GmailMark() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+      <path fill="#4285F4" d="M1.64 19.5h3.82v-9.28L0 6.13v11.73c0 .91.73 1.64 1.64 1.64Z" />
+      <path fill="#34A853" d="M18.55 19.5h3.81c.91 0 1.64-.73 1.64-1.64V6.13l-5.45 4.09v9.28Z" />
+      <path fill="#FBBC04" d="M18.55 6.13v4.09L24 6.13V4.91c0-1.81-2.07-2.84-3.52-1.75l-1.93 1.48v1.49Z" />
+      <path fill="#EA4335" d="M5.46 10.22V4.64L12 9.55l6.55-4.91v5.58L12 15.13l-6.54-4.91Z" />
+      <path fill="#C5221F" d="M0 4.91v1.22l5.46 4.09V4.64L3.52 3.16C2.07 2.07 0 3.1 0 4.91Z" />
+    </svg>
+  );
+}
+
+function GoogleScholarMark() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
+      <path fill="#4285F4" d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27A7.49 7.49 0 0 0 12 9.5a7.49 7.49 0 0 0-6.76 4.27Z" />
+      <circle cx="12" cy="17" r="7" fill="#4285F4" />
+      <path fill="#fff" d="M12 11a6 6 0 0 0-5.67 4.04h11.34A6 6 0 0 0 12 11Z" />
+    </svg>
+  );
+}
 
 const researchAreas = [
   { number: '01', title: 'Human-centered AI', description: 'Designing intelligent systems that are useful, interpretable, and aligned with the people who rely on them.' },
@@ -34,9 +55,9 @@ export default function Home() {
           <p className="role">Researcher working at the intersection of <strong>machine learning</strong> and <strong>human-centered computing</strong>.</p>
           <div className="location"><MapPin size={16} aria-hidden="true" />City, Country · University Name</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
-            <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><Mail size={19} /></a>
+            <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><GmailMark /></a>
             <a className="linkedin-link" href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><span aria-hidden="true">in</span></a>
-            <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GraduationCap size={20} /></a>
+            <a href="https://scholar.google.com/citations?user=iChZAC0AAAAJ&hl=zh-CN" aria-label="Yiling Ma on Google Scholar"><GoogleScholarMark /></a>
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
