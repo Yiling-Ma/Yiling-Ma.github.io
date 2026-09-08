@@ -140,22 +140,22 @@ const teachingItems = [
 
 const publications = [
   {
-    title: 'Publication title to be updated',
-    authors: ['Yiling Ma', 'Collaborator Name', 'Advisor Name'],
-    venue: 'Conference / Journal / Under Review',
-    links: ['Paper', 'Code', 'Project Page'],
+    title: 'Low-light image and video enhancement: A comprehensive survey and beyond',
+    authors: ['Shen Zheng', 'Yiling Ma', 'Jinqian Pan', 'Changjie Lu', 'Gaurav Gupta'],
+    venue: 'arXiv preprint arXiv:2212.10772',
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2212.10772' }],
   },
   {
     title: 'Publication title to be updated',
     authors: ['Yiling Ma', 'Collaborator Name'],
     venue: 'Workshop / Preprint',
-    links: ['Paper', 'Code'],
+    links: [{ label: 'Paper' }, { label: 'Code' }],
   },
   {
     title: 'Publication title to be updated',
     authors: ['Yiling Ma', 'Advisor Name'],
     venue: 'Research experience / Thesis',
-    links: ['Paper'],
+    links: [{ label: 'Paper' }],
   },
 ];
 
@@ -241,7 +241,11 @@ export default function Home() {
                 </p>
                 <p className="publication-venue">{publication.venue}</p>
                 <p className="selected-publication-links">
-                  {publication.links.map((link) => <span key={link}>{link}</span>)}
+                  {publication.links.map((link) => (
+                    link.href
+                      ? <a href={link.href} key={link.label}>{link.label}</a>
+                      : <span key={link.label}>{link.label}</span>
+                  ))}
                 </p>
               </article>
             ))}
