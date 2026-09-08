@@ -49,7 +49,7 @@ function TeachingIcon() {
 
 function YaleTeachingMark() {
   return (
-    <img className="yale-teaching-mark" src="/yale-bulldog.png" alt="Yale University" />
+    <img className="yale-teaching-mark" src="/yale-bulldog-transparent.png" alt="Yale University" />
   );
 }
 
