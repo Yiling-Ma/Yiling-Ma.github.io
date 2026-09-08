@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a>
+          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
