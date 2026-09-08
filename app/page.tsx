@@ -47,6 +47,14 @@ function TeachingIcon() {
   );
 }
 
+function YaleTeachingMark() {
+  return (
+    <div className="yale-teaching-mark" aria-hidden="true">
+      <span>Y</span>
+    </div>
+  );
+}
+
 const researchAreas = [
   {
     title: 'Trustworthy LLMs & Research Reasoning',
@@ -74,7 +82,7 @@ const researchAreas = [
 const teachingItems = [
   {
     role: 'Course Manager',
-    course: 'S&DS 2410 01 (FA26): Probability Theory',
+    course: 'S&DS 2410: Probability Theory',
     term: 'Fall 2026',
   },
   {
@@ -164,17 +172,15 @@ export default function Home() {
         </section>
 
         <section className="content-section teaching-section" id="teaching">
+          <div className="section-heading teaching-heading"><TeachingIcon /><h2>Teaching</h2></div>
           <div className="teaching-layout">
-            <TeachingIcon />
-            <div>
-              <div className="section-heading teaching-heading"><h2>Teaching</h2></div>
-              <div className="teaching-list">
-                {teachingItems.map((item) => (
-                  <article className="teaching-item" key={`${item.role}-${item.course}`}>
-                    <p><span>{item.role},</span> <strong>{item.course}</strong>, {item.term}</p>
-                  </article>
-                ))}
-              </div>
+            <YaleTeachingMark />
+            <div className="teaching-list">
+              {teachingItems.map((item) => (
+                <article className="teaching-item" key={`${item.role}-${item.course}`}>
+                  <p><span>{item.role},</span> <strong>{item.course}</strong>, {item.term}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
