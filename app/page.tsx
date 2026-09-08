@@ -56,6 +56,19 @@ function PublicationsIcon() {
   );
 }
 
+function PawIcon() {
+  return (
+    <svg className="paw-icon" aria-hidden="true" viewBox="0 0 92 92">
+      <path className="paw-icon-toe" d="M24.4 28.6c3.7-1 7.6 1.8 8.8 6.4 1.2 4.5-.8 8.9-4.5 9.9-3.7 1-7.6-1.8-8.9-6.4-1.2-4.6.9-8.9 4.6-9.9Z" />
+      <path className="paw-icon-toe" d="M42.6 19.7c3.9-.3 7.3 3.4 7.7 8.2.4 4.8-2.4 8.9-6.3 9.2-3.8.3-7.3-3.4-7.7-8.2-.4-4.8 2.4-8.9 6.3-9.2Z" />
+      <path className="paw-icon-toe" d="M61.6 28.6c3.7 1 5.8 5.3 4.6 9.9-1.3 4.6-5.2 7.4-8.9 6.4-3.7-1-5.7-5.4-4.5-9.9 1.2-4.6 5.1-7.4 8.8-6.4Z" />
+      <path className="paw-icon-toe" d="M74.5 45.7c3.1 2 3.4 6.7.7 10.7-2.6 4-7.2 5.6-10.3 3.6-3.1-2-3.4-6.8-.7-10.8 2.6-3.9 7.2-5.5 10.3-3.5Z" />
+      <path className="paw-icon-pad" d="M47.2 45.3c8.8.3 19.5 11.8 18.9 20.1-.4 5.8-6 8.5-12.5 6.6-3.1-.9-5-1.6-8.5-1.6-3.5 0-5.4.7-8.5 1.6-6.5 1.9-12.1-.8-12.5-6.6-.6-8.3 10.3-19.8 19.1-20.1 1.2 0 2.7 0 4 0Z" />
+      <path className="paw-icon-spark" d="M74.7 18.5v6M71.7 21.5h6" />
+    </svg>
+  );
+}
+
 function TeachingIcon() {
   return (
     <svg className="teaching-icon" aria-hidden="true" viewBox="0 0 92 92">
@@ -146,6 +159,13 @@ const publications = [
   },
 ];
 
+const furFamily = [
+  { name: 'Oreo', gender: 'male', photo: '/fur-oreo.jpeg' },
+  { name: '小呆', gender: 'male', photo: '/fur-xiaodai.jpeg' },
+  { name: 'Ferrari', gender: 'male', photo: '/fur-ferrari.jpeg' },
+  { name: 'Mercedes', gender: 'female', photo: '/fur-mercedes.jpeg' },
+];
+
 export default function Home() {
   return (
     <main className="site-shell">
@@ -168,7 +188,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a>
+          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#fur-family">Fur Family</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
@@ -239,6 +259,24 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="content-section fur-section" id="fur-family">
+          <div className="section-heading fur-heading">
+            <PawIcon />
+            <h2><a href="https://www.instagram.com/mmia.ooo/">Fur Family</a></h2>
+          </div>
+          <div className="fur-grid" aria-label="Yiling Ma's cats">
+            {furFamily.map((cat) => (
+              <article className="fur-card" key={cat.name}>
+                <img src={cat.photo} alt={`${cat.name}, ${cat.gender}`} />
+                <div>
+                  <h3>{cat.name}</h3>
+                  <p>{cat.gender}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
