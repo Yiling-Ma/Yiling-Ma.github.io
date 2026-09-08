@@ -91,7 +91,7 @@ export default function Home() {
         </section>
 
         <section className="content-section" id="research">
-          <div className="section-heading research-heading"><span>01</span><h2>Research interests</h2><p>The questions that connect my work.</p></div>
+          <div className="section-heading research-heading"><h2>Research interests</h2></div>
           <p className="research-statement">My research sits at the intersection of trustworthy language models, multimodal medical AI, and computational biomedicine. I am especially interested in building systems that reason over evidence, know when to retrieve or abstain, and remain reliable in high-stakes biomedical settings.</p>
           <div className="research-list">
             {researchAreas.map((area) => (
