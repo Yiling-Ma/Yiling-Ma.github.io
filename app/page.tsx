@@ -10,8 +10,8 @@ import {
 function GoogleScholarMark() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" width="21" height="21">
-      <path fill="#4285F4" d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27A7.49 7.49 0 0 0 12 9.5a7.49 7.49 0 0 0-6.76 4.27Z" />
-      <circle cx="12" cy="17" r="7" fill="#4285F4" />
+      <path fill="currentColor" d="M5.24 13.77 0 9.5 12 0l12 9.5-5.24 4.27A7.49 7.49 0 0 0 12 9.5a7.49 7.49 0 0 0-6.76 4.27Z" />
+      <circle cx="12" cy="17" r="7" fill="currentColor" />
       <path fill="#fff" d="M12 11a6 6 0 0 0-5.67 4.04h11.34A6 6 0 0 0 12 11Z" />
     </svg>
   );
