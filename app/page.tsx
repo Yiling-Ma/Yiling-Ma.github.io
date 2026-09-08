@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'Bridging Gene Regulatory Networks and Causal Representation Learning in Single-Cell Genomics Data',
+    authors: ['Vincenzo Lagani', 'Giorgi Sokhadze', 'Liliia Nigmetzianova', 'Robert Lehmann', 'Yiling Ma', 'Sumeer Khan', 'Xabier Martínez de Morentin', 'Narsis Kiani', 'Mikel Hernaez', 'Alexander A Lukyanov', 'Jesper Tegnér', 'David Gomez-Cabrero'],
+    venue: 'ICML 2026',
+    links: [{ label: 'Project Page', href: 'https://icml.cc/virtual/2026/70801' }],
+  },
+  {
     title: 'Low-light image and video enhancement: A comprehensive survey and beyond',
     authors: ['Shen Zheng', 'Yiling Ma', 'Jinqian Pan', 'Changjie Lu', 'Gaurav Gupta'],
     venue: '',
