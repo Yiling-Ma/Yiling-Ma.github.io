@@ -36,6 +36,17 @@ function ResearchLensIcon() {
   );
 }
 
+function TeachingIcon() {
+  return (
+    <svg className="teaching-icon" aria-hidden="true" viewBox="0 0 92 92">
+      <path className="teaching-icon-book" d="M16 20.5c12.2-1.9 21.2.6 30 7.1v43.8c-8.6-6.1-18.7-8.6-30-6.9V20.5Z" />
+      <path className="teaching-icon-book" d="M76 20.5c-12.2-1.9-21.2.6-30 7.1v43.8c8.6-6.1 18.7-8.6 30-6.9V20.5Z" />
+      <path className="teaching-icon-line" d="M27 32.5c4.6.2 8.7 1.2 12.7 3.1M27 43.2c4.7.4 8.7 1.4 12.7 3.1M53 35.6c3.9-1.9 8-2.9 12-3.1M53 46.3c4-1.7 8-2.7 12-3.1" />
+      <path className="teaching-icon-spark" d="M46 10.5v7.2M42.4 14.1h7.2M74.2 10.7l1.9 5.5 5.4 1.9-5.4 1.9-1.9 5.4-1.9-5.4-5.4-1.9 5.4-1.9 1.9-5.5Z" />
+    </svg>
+  );
+}
+
 const researchAreas = [
   {
     title: 'Trustworthy LLMs & Research Reasoning',
@@ -57,6 +68,34 @@ const researchAreas = [
     question: 'How can representation learning capture structure that is both clinically useful and biologically meaningful?',
     hint: 'show/hide work on clinically useful and biologically meaningful representation learning.',
     work: 'single-cell aptamer liquid biopsy · gene regulatory networks and causal representation learning · maximum-entropy graph modeling',
+  },
+];
+
+const teachingItems = [
+  {
+    role: 'Course Manager',
+    course: 'S&DS 2410 01 (FA26): Probability Theory',
+    term: 'Fall 2026',
+  },
+  {
+    role: 'Teaching Fellow',
+    course: 'EMPH 542: Intro to Health Informatics',
+    term: 'Summer 2026',
+  },
+  {
+    role: 'Teaching Fellow',
+    course: 'S&DS 2300: Data Exploration and Analysis',
+    term: 'Spring 2026',
+  },
+  {
+    role: 'Teaching Fellow',
+    course: 'CHNS.1420.UMB',
+    term: 'Spring 2026',
+  },
+  {
+    role: 'Teaching Fellow',
+    course: 'CHNS.1320.UMB',
+    term: 'Fall 2025',
   },
 ];
 
@@ -88,7 +127,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a>
+          <a href="#about">About me</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#experience">Experience</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
@@ -124,8 +163,24 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="content-section teaching-section" id="teaching">
+          <div className="teaching-layout">
+            <TeachingIcon />
+            <div>
+              <div className="section-heading teaching-heading"><h2>Teaching</h2></div>
+              <div className="teaching-list">
+                {teachingItems.map((item) => (
+                  <article className="teaching-item" key={`${item.role}-${item.course}`}>
+                    <p><span>{item.role},</span> <strong>{item.course}</strong>, {item.term}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="content-section" id="publications">
-          <div className="section-heading"><span>02</span><h2>Selected work</h2><p>A small set of projects with clear research contributions.</p></div>
+          <div className="section-heading"><span>03</span><h2>Selected work</h2><p>A small set of projects with clear research contributions.</p></div>
           <div className="publication-list">
             {publications.map((publication) => (
               <article className="publication" key={publication.title}>
@@ -137,7 +192,7 @@ export default function Home() {
         </section>
 
         <section className="content-section" id="experience">
-          <div className="section-heading"><span>03</span><h2>Experience</h2><p>Education and research appointments.</p></div>
+          <div className="section-heading"><span>04</span><h2>Experience</h2><p>Education and research appointments.</p></div>
           <div className="timeline">
             <article><span>2024 — Present</span><BookOpen size={20} aria-hidden="true" /><div><h3>Research Assistant · Lab Name</h3><p>University Name</p><p>One sentence on the question, method, and outcome of your current work.</p></div></article>
             <article><span>2022 — 2024</span><GraduationCap size={20} aria-hidden="true" /><div><h3>Degree in Your Field</h3><p>University Name</p><p>Thesis: “Your thesis title.” Advisor: Professor Name.</p></div></article>
