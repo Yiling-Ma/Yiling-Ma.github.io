@@ -49,7 +49,7 @@ export default function Home() {
           </div>
           <p className="eyebrow">Prospective PhD Student · 2027</p>
           <h1>Yiling Ma</h1>
-          <p className="role degree-role"><span>Master student Biostatistics (Data Science)</span><span>Yale University</span></p>
+          <p className="role degree-role"><span>MS Biostatistics</span><span>Yale University</span></p>
           <div className="location"><MapPin size={16} aria-hidden="true" />New Haven, US</div>
           <div className="contact-row" aria-label="Contact and academic profiles">
             <a href="mailto:yiling.ma@yale.edu" aria-label="Email Yiling Ma"><Mail size={21} aria-hidden="true" /><span>yiling.ma [at] yale.edu</span></a>
