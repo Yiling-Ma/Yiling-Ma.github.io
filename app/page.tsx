@@ -24,6 +24,18 @@ function GithubMark() {
   );
 }
 
+function ResearchLensIcon() {
+  return (
+    <svg className="research-icon" aria-hidden="true" viewBox="0 0 74 74">
+      <path className="research-icon-ring" d="M34.2 7.8c14.9 0 26.5 11.3 26.5 25.8 0 14.9-11.8 26-26.5 26.2C19 60 7.9 48.7 7.7 34.2 7.5 19.3 19.2 8 34.2 7.8Z" />
+      <path className="research-icon-handle" d="M54 54.2c4.6 4.2 8.7 8.2 13.1 12.9" />
+      <path className="research-icon-bulb" d="M34.5 18.5c8.7.2 15.1 6.5 15 14.7-.1 5.3-2.6 9.7-6.8 12.6-1.8 1.2-2.4 2.9-2.4 5.3H28.8c0-2.4-.7-4-2.5-5.3-4.1-2.9-6.4-7.2-6.4-12.4 0-8.4 6.2-14.8 14.6-14.9Z" />
+      <path className="research-icon-filament" d="M26.6 35.1h15.8M34.5 24.8v10.3" />
+      <path className="research-icon-base" d="M28.1 56.2h12.8M29.8 61.1h9.7" />
+    </svg>
+  );
+}
+
 const researchAreas = [
   {
     title: 'Trustworthy LLMs & Research Reasoning',
@@ -91,7 +103,7 @@ export default function Home() {
         </section>
 
         <section className="content-section" id="research">
-          <div className="section-heading research-heading"><h2>Research interests</h2></div>
+          <div className="section-heading research-heading"><ResearchLensIcon /><h2>Research interests</h2></div>
           <p className="research-statement">My research sits at the intersection of trustworthy language models, multimodal medical AI, and computational biomedicine. I am especially interested in building systems that reason over evidence, know when to retrieve or abstain, and remain reliable in high-stakes biomedical settings.</p>
           <div className="research-list">
             {researchAreas.map((area) => (
