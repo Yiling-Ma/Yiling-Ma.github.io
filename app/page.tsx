@@ -49,9 +49,7 @@ function TeachingIcon() {
 
 function YaleTeachingMark() {
   return (
-    <div className="yale-teaching-mark" aria-hidden="true">
-      <span>Y</span>
-    </div>
+    <img className="yale-teaching-mark" src="/yale-bulldog.png" alt="Yale University" />
   );
 }
 
