@@ -302,7 +302,10 @@ export default function Home() {
           </div>
         </section>
 
-        <footer><span>Last updated: Sep 2026 · © Yiling Ma</span></footer>
+        <footer>
+          <p className="footer-slogan">Done is Perfect!</p>
+          <span>Last updated: Sep 2026 · © Yiling Ma</span>
+        </footer>
       </div>
     </main>
   );
