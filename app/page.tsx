@@ -142,7 +142,7 @@ const publications = [
   {
     title: 'RbtAct: Rebuttal as Supervision for Actionable Review Feedback Generation',
     authors: ['Sihong Wu', 'Yiling Ma', 'Yilun Zhao', 'Tiansheng Hu', 'Owen Jiang', 'Manasi Patwardhan', 'Arman Cohan'],
-    venue: 'Findings of ACL 2026',
+    venue: 'ACL 2026',
     links: [{ label: 'Paper', href: 'https://aclanthology.org/2026.findings-acl.1696/' }],
   },
   {
