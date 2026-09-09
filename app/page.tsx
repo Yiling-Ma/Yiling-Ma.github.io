@@ -209,6 +209,7 @@ export default function Home() {
           <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#fur-family">Fur Family</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
+        <p className="profile-slogan"><span>Life slogan:</span> Done is Perfect!</p>
       </aside>
 
       <div className="content-panel" id="top">
@@ -303,7 +304,6 @@ export default function Home() {
         </section>
 
         <footer>
-          <p className="footer-slogan"><span>Life slogan:</span> Done is Perfect!</p>
           <span>Last updated: Sep 2026 · © Yiling Ma</span>
         </footer>
       </div>
