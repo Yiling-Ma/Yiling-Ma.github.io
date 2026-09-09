@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation',
+    authors: ['Yiling Ma', 'Yilun Zhao', 'Sihong Wu', 'Ziyu Chen', 'Manasi Patwardhan', 'Arman Cohan'],
+    venue: '',
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2609.09076' }],
+  },
+  {
     title: 'Beyond the Embedding Bottleneck: Adaptive Retrieval-Augmented 3D CT Report Generation',
     authors: ['Renjie Liang', 'Yiling Ma', 'Yang Xing', 'Zhengkang Fan', 'Jinqian Pan', 'Chengkun Sun', 'Li Li', 'Kuang Gong', 'Jie Xu'],
     venue: '',
