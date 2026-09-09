@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'A Systematic Review of Deep Learning and Machine Learning Applications in Longitudinal Multimodal Clinical Data',
+    authors: ['Jinqian Pan', 'Tienyu Chang', 'Mengxian Lyu', 'Weimin Meng', 'Qingyu Wang', 'Yiling Ma', 'Ziyi Chen', 'Xiaohan Li', 'Chengkun Sun', 'Renjie Liang', 'Jennifer Fishe', 'Jie Xu'],
+    venue: 'Journal of Healthcare Informatics Research, 2026',
+    links: [{ label: 'Paper', href: 'https://link.springer.com/article/10.1007/s41666-026-00248-6' }],
+  },
+  {
     title: 'Bridging Gene Regulatory Networks and Causal Representation Learning in Single-Cell Genomics Data',
     authors: ['Vincenzo Lagani', 'Giorgi Sokhadze', 'Liliia Nigmetzianova', 'Robert Lehmann', 'Yiling Ma', 'Sumeer Khan', 'Xabier Martínez de Morentin', 'Narsis Kiani', 'Mikel Hernaez', 'Alexander A Lukyanov', 'Jesper Tegnér', 'David Gomez-Cabrero'],
     venue: 'ICML 2026',
