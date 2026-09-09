@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'Can AI Be a Good Peer Reviewer? A Survey of Peer Review Process, Evaluation, and the Future',
+    authors: ['Sihong Wu', 'Owen Jiang', 'Yilun Zhao', 'Tiansheng Hu', 'Yiling Ma', 'Kaiyan Zhang', 'Manasi Patwardhan', 'Arman Cohan'],
+    venue: 'ACL 2026',
+    links: [{ label: 'Paper', href: 'https://aclanthology.org/2026.acl-long.1504/' }],
+  },
+  {
     title: 'A Systematic Review of Deep Learning and Machine Learning Applications in Longitudinal Multimodal Clinical Data',
     authors: ['Jinqian Pan', 'Tienyu Chang', 'Mengxian Lyu', 'Weimin Meng', 'Qingyu Wang', 'Yiling Ma', 'Ziyi Chen', 'Xiaohan Li', 'Chengkun Sun', 'Renjie Liang', 'Jennifer Fishe', 'Jie Xu'],
     venue: 'Journal of Healthcare Informatics Research, 2026',
