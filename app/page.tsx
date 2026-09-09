@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'Beyond the Embedding Bottleneck: Adaptive Retrieval-Augmented 3D CT Report Generation',
+    authors: ['Renjie Liang', 'Yiling Ma', 'Yang Xing', 'Zhengkang Fan', 'Jinqian Pan', 'Chengkun Sun', 'Li Li', 'Kuang Gong', 'Jie Xu'],
+    venue: '',
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2603.15822' }],
+  },
+  {
     title: 'RbtAct: Rebuttal as Supervision for Actionable Review Feedback Generation',
     authors: ['Sihong Wu', 'Yiling Ma', 'Yilun Zhao', 'Tiansheng Hu', 'Owen Jiang', 'Manasi Patwardhan', 'Arman Cohan'],
     venue: 'ACL 2026',
