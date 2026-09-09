@@ -206,10 +206,6 @@ export default function Home() {
           </div>
           <p className="profile-slogan">“Done is Perfect!”</p>
         </div>
-        <nav className="side-nav" aria-label="Main navigation">
-          <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#fur-family">Fur Family</a>
-        </nav>
-        <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
       </aside>
 
       <div className="content-panel" id="top">
@@ -304,6 +300,10 @@ export default function Home() {
         </section>
 
         <footer>
+          <nav className="footer-nav" aria-label="Main navigation">
+            <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#fur-family">Fur Family</a>
+          </nav>
+          <p className="footer-note">Open to PhD opportunities beginning Fall 2027.</p>
           <span>Last updated: Sep 2026 · © Yiling Ma</span>
         </footer>
       </div>

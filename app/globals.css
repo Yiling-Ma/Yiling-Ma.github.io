@@ -34,10 +34,6 @@ a { color: inherit; text-decoration: none; }
 .contact-row svg { flex: 0 0 auto; }
 .linkedin-mark { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 2px; background: currentColor; color: #4b7da0; font-family: Arial, Helvetica, sans-serif; font-size: 0; }
 .linkedin-mark::after { content: 'in'; color: #fff; font-size: 15px; font-weight: 800; line-height: 1; letter-spacing: -.05em; }
-.side-nav { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; margin-top: 26px; padding-top: 15px; border-top: 1px solid rgba(21,25,31,.18); }
-.side-nav a { color: #4b5559; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
-.side-nav a:hover, .side-nav a:focus-visible { color: var(--accent); }
-.panel-note { position: relative; z-index: 1; margin: 8px 0 0; color: var(--muted); font-size: 12px; text-align: center; }
 .profile-slogan { margin: 15px 0 0; color: rgba(21,25,31,.76); font-family: 'Snell Roundhand', 'Brush Script MT', 'Segoe Script', cursive; font-size: clamp(24px, 2.35vw, 34px); font-weight: 500; letter-spacing: .01em; text-align: center; }
 .content-panel { width: 58%; margin-left: 42%; background: var(--paper); }
 .intro-section, .content-section { padding: clamp(70px, 9vw, 132px) clamp(32px, 6vw, 90px); }
@@ -133,13 +129,16 @@ a { color: inherit; text-decoration: none; }
 .fur-card img { width: clamp(82px, 7.4vw, 112px); aspect-ratio: 1; display: block; border-radius: 50%; border: 3px solid rgba(255,255,255,.88); outline: 1px solid rgba(75,125,160,.32); object-fit: cover; box-shadow: 0 12px 24px rgba(21,25,31,.08); }
 .fur-card h3 { margin: 0; color: var(--ink); font-size: 16px; line-height: 1.2; font-weight: 800; }
 .fur-card p { margin: 2px 0 0; color: var(--muted); font-size: 13px; line-height: 1.2; text-transform: lowercase; }
-footer { padding: 18px clamp(32px, 6vw, 90px) 34px; background: var(--paper); color: #9aa0a3; text-align: center; }
+footer { padding: 22px clamp(32px, 6vw, 90px) 34px; background: var(--paper); color: #9aa0a3; text-align: center; border-top: 1px solid var(--line); }
+.footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin: 0 0 10px; }
+.footer-nav a { color: #4b5559; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+.footer-nav a:hover, .footer-nav a:focus-visible { color: var(--accent); }
+.footer-note { margin: 0 0 22px; color: var(--muted); font-size: 13px; line-height: 1.45; }
 footer > span { display: block; color: #9aa0a3; font-size: 12px; font-weight: 600; letter-spacing: .01em; }
 @media (max-width: 980px) {
   .profile-panel { position: relative; width: 100%; height: auto; min-height: 100svh; overflow: visible; }
   .content-panel { width: 100%; margin-left: 0; }
   .profile-content h1 { font-size: clamp(42px, 8vw, 60px); }
-  .side-nav { margin-top: 20px; }
 }
 @media (max-height: 900px) and (min-width: 981px) {
   .profile-panel { padding-top: 20px; padding-bottom: 16px; }
@@ -150,8 +149,6 @@ footer > span { display: block; color: #9aa0a3; font-size: 12px; font-weight: 60
   .role { margin: 12px 0; line-height: 1.4; }
   .contact-row { gap: 7px 9px; margin-top: 14px; }
   .contact-row a { min-height: 35px; padding: 6px 11px; }
-  .side-nav { gap: 8px 18px; padding-top: 14px; }
-  .panel-note { margin-top: 6px; }
 }
 @media (max-width: 640px) {
   .profile-panel { min-height: 100svh; padding: 26px 24px 24px; }
