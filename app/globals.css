@@ -16,7 +16,6 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: Aria
 a { color: inherit; text-decoration: none; }
 .site-shell { min-height: 100vh; }
 .profile-panel { position: fixed; inset: 0 auto 0 0; width: 42%; height: 100vh; padding: 26px clamp(30px, 4.5vw, 70px) 20px; display: flex; flex-direction: column; justify-content: center; background: var(--mist); overflow: hidden; }
-.profile-panel::after { content: ''; position: absolute; width: 55%; aspect-ratio: 1; right: -18%; bottom: -20%; border: 1px solid rgba(21,25,31,.12); border-radius: 50%; }
 .wordmark { position: absolute; top: 26px; left: clamp(30px, 4.5vw, 70px); z-index: 1; width: max-content; font-size: 21px; font-weight: 800; letter-spacing: -.04em; }
 .wordmark span { color: var(--accent); }
 .profile-content { width: 100%; margin: 0 auto; position: relative; z-index: 1; text-align: center; }
