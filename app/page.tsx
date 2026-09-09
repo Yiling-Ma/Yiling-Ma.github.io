@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'RbtAct: Rebuttal as Supervision for Actionable Review Feedback Generation',
+    authors: ['Sihong Wu', 'Yiling Ma', 'Yilun Zhao', 'Tiansheng Hu', 'Owen Jiang', 'Manasi Patwardhan', 'Arman Cohan'],
+    venue: 'Findings of ACL 2026',
+    links: [{ label: 'Paper', href: 'https://aclanthology.org/2026.findings-acl.1696/' }],
+  },
+  {
     title: 'Can AI Be a Good Peer Reviewer? A Survey of Peer Review Process, Evaluation, and the Future',
     authors: ['Sihong Wu', 'Owen Jiang', 'Yilun Zhao', 'Tiansheng Hu', 'Yiling Ma', 'Kaiyan Zhang', 'Manasi Patwardhan', 'Arman Cohan'],
     venue: 'ACL 2026',
