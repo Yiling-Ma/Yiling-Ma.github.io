@@ -204,12 +204,12 @@ export default function Home() {
             <a href="https://github.com/" aria-label="Yiling Ma on GitHub"><GithubMark /><span>GitHub</span></a>
             <a href="https://www.linkedin.com/in/elena-ma-402a47310/" aria-label="Yiling Ma on LinkedIn"><span className="linkedin-mark" aria-hidden="true">in</span><span>LinkedIn</span></a>
           </div>
+          <p className="profile-slogan">“Done is Perfect!”</p>
         </div>
         <nav className="side-nav" aria-label="Main navigation">
           <a href="#about">About me</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#fur-family">Fur Family</a>
         </nav>
         <p className="panel-note">Open to PhD opportunities beginning Fall 2027.</p>
-        <p className="profile-slogan"><span>Life slogan:</span> Done is Perfect!</p>
       </aside>
 
       <div className="content-panel" id="top">
