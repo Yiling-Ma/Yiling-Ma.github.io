@@ -88,25 +88,25 @@ function YaleTeachingMark() {
 
 const researchAreas = [
   {
-    title: 'Trustworthy LLMs & Research Reasoning',
-    tags: 'Post-training · Process Evaluation · Faithfulness',
+    title: '1. Trustworthy LLMs & Reasoning',
+    tags: '',
     question: 'How can we make model outputs not only stronger, but reliably grounded in the right evidence, scope, and reasoning process?',
-    hint: 'show/hide work on grounding LLM outputs in evidence, scope, and faithful reasoning processes.',
-    work: 'ActReview · RbtAct · IdeaAmbig · IdeaAnchor · Scope-Fidelity Verifier',
+    hint: 'show/hide interest in faithful, evidence-grounded language model reasoning.',
+    description: 'I am interested in developing language models that can reason over complex evidence, recognize uncertainty or ambiguity, and produce outputs that are faithful to the underlying information rather than merely plausible.',
   },
   {
-    title: 'Multimodal Medical AI',
-    tags: 'Medical VLMs · RAG · Imaging · Longitudinal Health Data',
-    question: 'How can AI systems integrate visual, textual, and temporal biomedical signals without losing clinically critical evidence?',
-    hint: 'show/hide work on integrating visual, textual, and longitudinal biomedical evidence.',
-    work: 'Adaptive RAG for CT report generation · medical VLM evidence dependency · structural MRI for AD/ADRD · wearable glucose forecasting',
+    title: '2. Multimodal AI for X',
+    tags: '',
+    question: 'How can AI systems connect language, vision, temporal signals, and structured data to support reasoning in complex real-world domains?',
+    hint: 'show/hide interest in connecting heterogeneous evidence across modalities.',
+    description: 'I am interested in multimodal models that integrate heterogeneous evidence, such as text, images, videos, and longitudinal signals, especially in scientific and medical settings where important information is distributed across different data sources.',
   },
   {
-    title: 'Computational Biomedicine',
-    tags: 'Single-Cell Learning · Cancer Detection · Biological Representation Learning',
-    question: 'How can representation learning capture structure that is both clinically useful and biologically meaningful?',
-    hint: 'show/hide work on clinically useful and biologically meaningful representation learning.',
-    work: 'single-cell aptamer liquid biopsy · gene regulatory networks and causal representation learning · maximum-entropy graph modeling',
+    title: '3. Self-Improvement',
+    tags: '',
+    question: 'How can AI systems learn to improve their own reasoning, feedback, and decision-making over time?',
+    hint: 'show/hide interest in feedback, memory, and iterative refinement.',
+    description: 'I am interested in models that can benefit from feedback, memory, external knowledge, and iterative refinement, moving from one-shot generation toward systems that can diagnose their own weaknesses and become more reliable through interaction.',
   },
 ];
 
@@ -224,7 +224,7 @@ export default function Home() {
 
         <section className="content-section" id="research">
           <div className="section-heading research-heading"><ResearchLensIcon /><h2>Research interests</h2></div>
-          <p className="research-statement">My research sits at the intersection of trustworthy language models, multimodal medical AI, and computational biomedicine. I am especially interested in building systems that reason over evidence, know when to retrieve or abstain, and remain reliable in high-stakes biomedical settings.</p>
+          <p className="research-statement">My research focuses on building reliable AI systems that can reason over evidence, integrate information across modalities, and improve through feedback and interaction. I am especially interested in language and multimodal models for scientific and high-stakes decision-making, where models must be not only capable, but also grounded, transparent, and adaptive.</p>
           <div className="research-list">
             {researchAreas.map((area) => (
               <details className="research-item" key={area.title}>
@@ -232,13 +232,13 @@ export default function Home() {
                   <span className="research-summary-text">
                     <span>
                       <span className="research-title">{area.title}:</span>
-                      <span className="research-tags">{area.tags}</span>
+                      {area.tags ? <span className="research-tags">{area.tags}</span> : null}
                     </span>
                     <span className="research-toggle">→ {area.hint}</span>
                   </span>
                 </summary>
                 <p className="research-question"><strong>Question:</strong> {area.question}</p>
-                <p><strong>Selected work:</strong> {area.work}</p>
+                <p>{area.description}</p>
               </details>
             ))}
           </div>
