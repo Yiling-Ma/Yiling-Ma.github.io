@@ -303,7 +303,7 @@ export default function Home() {
         </section>
 
         <footer>
-          <p className="footer-slogan">Done is Perfect!</p>
+          <p className="footer-slogan"><span>Life slogan:</span> Done is Perfect!</p>
           <span>Last updated: Sep 2026 · © Yiling Ma</span>
         </footer>
       </div>
