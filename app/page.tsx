@@ -140,6 +140,12 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications',
+    authors: ['Yiling Ma', 'Yilun Zhao', 'Sihong Wu', 'Manasi Patwardhan', 'Arman Cohan'],
+    venue: '',
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2609.10539' }],
+  },
+  {
     title: 'ActReview: Rebuttal-Guided Training Data and Rubric Rewards for Actionable Peer Review Generation',
     authors: ['Yiling Ma', 'Yilun Zhao', 'Sihong Wu', 'Ziyu Chen', 'Manasi Patwardhan', 'Arman Cohan'],
     venue: '',
