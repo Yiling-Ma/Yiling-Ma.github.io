@@ -132,6 +132,11 @@ const teachingItems = [
     term: 'Spring 2026',
   },
   {
+    role: 'Near Peer Mentor',
+    course: 'SAY-YES: Yale Simulation Academy',
+    term: 'Fall 2025, Spring 2026',
+  },
+  {
     role: 'Teaching Fellow',
     course: 'CHNS.1320.UMB',
     term: 'Fall 2025',
