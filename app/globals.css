@@ -35,8 +35,8 @@ a { color: inherit; text-decoration: none; }
 .linkedin-mark { width: 20px; height: 20px; display: grid; place-items: center; border-radius: 2px; background: currentColor; color: #4b7da0; font-family: Arial, Helvetica, sans-serif; font-size: 0; }
 .linkedin-mark::after { content: 'in'; color: #fff; font-size: 15px; font-weight: 800; line-height: 1; letter-spacing: -.05em; }
 .panel-bottom { position: absolute; left: clamp(30px, 4.5vw, 70px); right: clamp(30px, 4.5vw, 70px); bottom: 22px; z-index: 1; }
-.side-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 24px; padding-top: 12px; border-top: 1px solid rgba(21,25,31,.18); }
-.side-nav a { color: #4b5559; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+.side-nav { display: flex; flex-wrap: nowrap; justify-content: center; gap: clamp(12px, 1.6vw, 22px); padding-top: 12px; border-top: 1px solid rgba(21,25,31,.18); }
+.side-nav a { color: #4b5559; font-size: clamp(11px, 1.05vw, 13px); font-weight: 700; letter-spacing: .035em; white-space: nowrap; }
 .side-nav a:hover, .side-nav a:focus-visible { color: var(--accent); }
 .panel-note { margin: 8px 0 0; color: var(--muted); font-size: 12px; text-align: center; }
 .profile-slogan { margin: 0 0 12px; color: rgba(21,25,31,.76); font-family: 'Snell Roundhand', 'Brush Script MT', 'Segoe Script', cursive; font-size: clamp(23px, 2.1vw, 30px); line-height: 1.15; font-weight: 500; letter-spacing: .01em; text-align: center; }
@@ -154,7 +154,7 @@ footer > span { display: block; color: #9aa0a3; font-size: 12px; font-weight: 60
   .contact-row a { min-height: 35px; padding: 6px 11px; }
   .panel-bottom { bottom: 16px; }
   .profile-slogan { margin-bottom: 10px; font-size: clamp(21px, 1.85vw, 26px); }
-  .side-nav { gap: 8px 18px; padding-top: 12px; }
+  .side-nav { gap: clamp(10px, 1.35vw, 16px); padding-top: 12px; }
   .panel-note { margin-top: 6px; }
 }
 @media (max-width: 640px) {
