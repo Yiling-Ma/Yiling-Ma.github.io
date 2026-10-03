@@ -80,6 +80,17 @@ function TeachingIcon() {
   );
 }
 
+function ScheduleIcon() {
+  return (
+    <svg className="schedule-icon" aria-hidden="true" viewBox="0 0 92 92">
+      <rect className="schedule-icon-page" x="19" y="20" width="54" height="54" rx="8" />
+      <path className="schedule-icon-top" d="M19 34h54" />
+      <path className="schedule-icon-ring" d="M32 14v13M60 14v13" />
+      <path className="schedule-icon-check" d="M34 52.5 43 61l16-22" />
+    </svg>
+  );
+}
+
 function YaleTeachingMark() {
   return (
     <img className="yale-teaching-mark" src="/yale-bulldog-transparent.png" alt="Yale University" />
@@ -239,6 +250,19 @@ export default function Home() {
             <p>I have also worked with <a href="https://vllab.ucmerced.edu//">VLLab @ UC Merced</a>, <a href="https://www.ai4biomedlab.org/research/">AI4Biomed Lab</a>, <a href="https://www.gersteinlab.org/">Gerstein Lab</a>, <a href="https://www.oist.jp/research/research-units/cse">OIST CSE</a>, the University of Florida, Saudi Aramco, New York University Shanghai, <a href="https://en.zhejianglab.com/collaboration/aiforvirology/scholarlibrary/202312/t20231208_3684.shtml">Zhejiang Lab</a>, and <a href="https://www.wisbot.ai/">Wisbot</a> (startup). I appreciate the opportunity to collaborate with distinguished professors and researchers from these institutions.</p>
           </div>
           <div className="status-line"><span className="status-dot" />Currently: finishing my thesis and preparing PhD applications.</div>
+        </section>
+
+        <section className="content-section schedule-section" id="schedule">
+          <div className="section-heading schedule-heading"><ScheduleIcon /><h2>Schedule a meeting</h2></div>
+          <div className="schedule-card">
+            <iframe
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3lnfSSkZ6oUmA4wTN2N83sUapi-2YDrH0o3YUUMvROlkAD7XP_uJt9B6nUTc9mWUm7yATnF6uj?gv=true"
+              title="Schedule a meeting with Yiling Ma"
+              width="100%"
+              height="600"
+              loading="lazy"
+            />
+          </div>
         </section>
 
         <section className="content-section" id="research">
