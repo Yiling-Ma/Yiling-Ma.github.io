@@ -252,6 +252,7 @@ export default function Home() {
           <div className="status-line"><span className="status-dot" />Currently: finishing my thesis and preparing PhD applications.</div>
         </section>
 
+        {/*
         <section className="content-section schedule-section" id="schedule">
           <div className="section-heading schedule-heading"><ScheduleIcon /><h2>Schedule a meeting</h2></div>
           <div className="schedule-card">
@@ -264,6 +265,7 @@ export default function Home() {
             />
           </div>
         </section>
+        */}
 
         <section className="content-section" id="research">
           <div className="section-heading research-heading"><ResearchLensIcon /><h2>Research interests</h2></div>
