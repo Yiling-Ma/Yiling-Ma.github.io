@@ -156,6 +156,13 @@ const teachingItems = [
 
 const publications = [
   {
+    title: 'When Evidence Vanishes: Distilling Visual-Evidence Dependency in Medical Vision-Language Models',
+    authors: ['Qizhen Lan', 'Yiling Ma', 'Ruiqi Chen', 'Mengchen Fan', 'Xi Xiao', 'Lin Zhao', 'Liang He', 'Baocheng Geng', 'Pulin Che', 'Tianyang Wang', 'Xiaoqian Jiang'],
+    equalContributionAuthors: ['Qizhen Lan', 'Yiling Ma'],
+    venue: '',
+    links: [{ label: 'arXiv', href: 'https://arxiv.org/abs/2610.23469' }],
+  },
+  {
     title: 'IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications',
     authors: ['Yiling Ma', 'Yilun Zhao', 'Sihong Wu', 'Manasi Patwardhan', 'Arman Cohan'],
     venue: '',
@@ -299,10 +306,12 @@ export default function Home() {
                   {publication.authors.map((author, authorIndex) => (
                     <span key={`${author}-${authorIndex}`}>
                       {author === 'Yiling Ma' ? <strong>{author}</strong> : author}
+                      {'equalContributionAuthors' in publication && publication.equalContributionAuthors.includes(author) ? <sup>*</sup> : null}
                       {authorIndex < publication.authors.length - 1 ? ', ' : ''}
                     </span>
                   ))}
                 </p>
+                {'equalContributionAuthors' in publication ? <p className="publication-contribution-note">* Equal contribution (co-first authors).</p> : null}
                 {publication.venue ? <p className="publication-venue">{publication.venue}</p> : null}
                 <p className="selected-publication-links">
                   {publication.links.map((link) => (

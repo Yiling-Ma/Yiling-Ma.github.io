@@ -112,6 +112,8 @@ a { color: inherit; text-decoration: none; }
 .selected-publication h3 { margin: 0 0 5px; color: #00356b; font-size: 17px; line-height: 1.32; font-weight: 800; letter-spacing: -.01em; }
 .selected-publication p { margin: 3px 0; color: #2f363a; font-size: 16px; line-height: 1.42; }
 .publication-authors strong { color: var(--ink); font-weight: 800; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.publication-authors sup { margin-left: 1px; color: var(--accent); font-size: .72em; font-weight: 800; }
+.selected-publication .publication-contribution-note { margin-top: 0; color: var(--muted); font-size: 13px; font-style: italic; }
 .publication-venue { font-style: italic; }
 .selected-publication-links { display: flex; flex-wrap: wrap; gap: 10px; color: #00356b; font-weight: 800; }
 .selected-publication-links span, .selected-publication-links a { color: #00356b; font-weight: 800; }
